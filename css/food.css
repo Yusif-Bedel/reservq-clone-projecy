@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  nav {
+    background-color: #000929 !important;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    z-index: 99;
+  }
+  .nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .navlinks a {
+    color: white;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+  }
+  .nav-center div {
+    position: relative;
+  }
+  .nav-center div i {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+  }
+  .nav-center div input {
+    background: #122833;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .fa-heart {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  .fa-cart-plus {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .login {
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: #f01543;
+    font-weight: bold;
+  }
+  .signup {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  .d-none{
+    display: none;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 98;
+}
+.d-none i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.section8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    width: 100%;
+    gap: 50px;
+    background-image: url(https://reservq.vercel.app/assets/rest-bg-542f355f.png);
+    background-size: cover;
+}
+.s8-left{
+width: 40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+}
+.s8-left h2{
+    font-size: 48px;
+}
+.s8-right{
+
+    overflow: hidden;
+}
+.s8-right img{
+width: 600px;
+}
+.s8-right-bottom{
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+    width: 100%;
+}
+.googleplay{
+    background: white;
+    padding: 20px;
+    border-radius: 50px;
+    color: black;
+    display: flex;justify-content: center;align-items: center;gap: 5px;
+}
+.googleplay img{
+width: 30px;
+}
+.appstore{
+    background: black;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    display: flex;justify-content: center;align-items: center;gap: 15px;
+}
+.appstore i{
+    font-size: 30px;
+}
+footer{
+    background-image: url(https://reservq.vercel.app/assets/Footers-bg-7148736e.png);
+    background-size: cover;
+
+}
+.footer-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+    border-bottom: 1px solid lightgray;
+}
+.foot1{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    color: white;
+}
+.f-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.f-icons i{
+    padding: 20px;
+    background: #19213e;
+    border-radius: 20px;
+    color: gray;
+}
+.foot2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+}
+.foot2 h3{
+    color: white;
+    font-size: 24px;
+}
+.foot2-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.foot2-ul li a{
+    color: white;
+}
+.foot3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+}
+.foot3 h3{
+    color: white;
+    font-size: 24px;
+}
+.foot3-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.foot3-ul li a{
+    color: white;
+}
+.foot4{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+gap: 30px;
+width: 400px;
+}
+.foot4 h3{
+    color: white;
+    font-size: 24px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.formdiv input{
+    padding: 15px 15px 15px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.formdiv i{
+    position: absolute;
+    left: 10px;
+    color: gray;
+}
+form button{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background:#f01543;
+    color: white;
+    cursor: pointer;
+}
+.footer-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.footer-end{
+    color: gray;
+    font-weight: bold;
+    background: #000929;
+}
+.footer-end a{
+    color: gray;
+    text-decoration: underline;
+}
+.menu-1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://reservq.vercel.app/assets/inner-bg-99d2ac4c.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+    color: white;
+    padding-top: 300px; 
+    gap: 20px;
+}
+.menu-1 h2{
+    font-size: 48px;
+}
+.menu-1 h3{
+    font-size: 30px;
+}
+.food-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+}
+.f2-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.f2-left h2{
+    font-size: 48px;
+}
+.f2-left img{
+    width: 90%;
+}
+.f2-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.f2-right h3{
+    font-size: 24px;
+}
+.f2-right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.checkbox{
+    border: 1px solid red;
+    padding: 10px;
+}
+.fa-minus{
+    color: yellow;
+    font-style: 5px;
+    cursor: pointer;
+}
+.fa-plus{
+padding: 10px;
+border: 1px solid #f01543;
+border-radius: 10px;
+background: #f01543;
+color: white;
+cursor: pointer;
+}
+.food-count div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.food-count a{
+    margin-left: 20px;
+    padding: 15px;
+    color: white;
+    background: #000929;
+    border-radius: 15px;
+}
+.a-c{
+    text-align: center;
+    margin-left: 70px;
+    padding: 10px;
+    color: white;
+    background: #f01543;
+    border-radius: 10px;
+}
+.s3-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+    gap: 20px;
+  }
+  .s3-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .s3-card-head {
+    background-image: url(https://reservq.vercel.app/assets/traditional-6-c7b53cff.png);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 80px 10px;
+    background-size: cover;
+    width: 100%;
+  }
+  .s3-card-head i {
+    color: #f01543;
+    background: white;
+    font-weight: bold;
+  }
+  .s3-card-head span {
+      background-color: #000929cc;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .s3-card-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .s3-card-center span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #f01543;
+  }
+  .s3-card-center div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  .s3-card-center div i {
+    color: yellow;
+  }
+  .s3-card-foot {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .s3-card-foot a {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
+  .s3-card-foot div {
+    display: flex;
+    gap: 10px;
+  }
+  .s3-card-foot div i {
+    color: #f01543;
+    font-size: 20px;
+  }
+  .food-3{
+    padding: 100px 50px;
+  }
+  .food-3 h3{
+    font-size: 24px;
+    margin-left: 70px;
+  }
+  @media only screen and (max-width: 1080px) {
+    nav{
+        display: none;
+    }
+    .d-none{
+        display: flex;
+    }
+  }
+  @media only screen and (max-width: 960px){
+    .s8-right{
+        display: none;
+    }
+    .s8-left{
+        width: 100%;
+    }
+    .footer-start{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .foot1{
+        align-items: center;
+        text-align: center;
+    }
+    .foot2{
+        align-items: center;
+        text-align: center;
+    }
+    .foot3{
+        align-items: center;
+        text-align: center;
+    }
+    .foot4{
+        align-items: center;
+        text-align: center;
+    }
+    .s7-right{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 766px) {
+    .s3-cards{
+        flex-direction: column;
+    }
+    .s3-card{
+        width: 50%;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    .s5-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s6-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s6-people{
+        flex-direction: column;
+    }
+    .section1{
+        font-size: 10px;
+        padding: 100px 20px;
+        padding: 10px;
+        background-repeat: no-repeat;
+        overflow: hidden;   
+    }
+    .section1 h1{
+        font-size: 45px;
+    }
+    .section1 p{
+        width: 400px;
+    }
+    .section1-contain{
+        padding: 0;
+        font-style: 20px;
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .section2-center{
+        flex-direction: column;
+
+    }
+    .section2-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section2 img{
+        width: 70%;
+    }
+  }
+  @media only screen and (max-width: 490px){
+    .section3 ul{
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 416px){
+    .s3-card{
+        width: 70%;
+    }
+    .section5{
+        display: none;
+    }
+    .s8-right-bottom{
+        gap: 10px;
+    }
+    .footer-start{
+        overflow: hidden;
+        padding: 0;
+    }
+    .foot4 h3{
+        font-size: 16px;
+        padding: 0;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .s3-cards{
+        flex-direction: column;
+
+    }
+    .s3-card{
+        width: 90%;
+    }
+  }
+  @media only screen and (max-width: 610px){
+    .menu2-head{
+        display: none;
+    }
+    .food-2{
+        flex-direction: column;
+    }
+  }

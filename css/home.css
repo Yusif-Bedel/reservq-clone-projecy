@@ -1,0 +1,921 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+nav {
+  background-color: #000929 !important;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  z-index: 99;
+}
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navlinks a {
+  color: white;
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.nav-center div {
+  position: relative;
+}
+.nav-center div i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+}
+.nav-center div input {
+  background: #122833;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.fa-heart {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.fa-cart-plus {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login {
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #f01543;
+  font-weight: bold;
+}
+.signup {
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.section1 {
+  padding:100px 50px;
+  background-image: url(https://reservq.vercel.app/assets/banner-bg-two-751df5dc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.section1-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+}
+.section1 h1 {
+  font-size: 68px;
+  color: white;
+}
+.section1 p {
+  color: white;
+}
+.section1-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.section1-icons a {
+  color: #f01543;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  border: 1px solid #f01543;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+.section1-icons a:hover {
+  color: white;
+  background: #f01543;
+}
+.section2 {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+.section2-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.section2-head h2 {
+  font-size: 48px;
+}
+.section2-head a {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  color: black;
+}
+.section2-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.s2-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+  transition: 0.4s linear;
+}
+.s2-card i {
+  font-size: 35px;
+}
+.s2-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.s2-card-text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.fa-circle {
+  color: orangered;
+  font-size: 5px;
+}
+.s2-card:hover {
+  color: white;
+  background: #f01543;
+}
+.section2-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.s2-b-left {
+  width: 43%;
+  height: 300px;
+  cursor: pointer;
+}
+.s2-b-right {
+  width: 55%;
+  height: 300px;
+  cursor: pointer;
+}
+.section3 {
+  background-image: url(https://reservq.vercel.app/assets/traditional-bg-9423c4a0.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section3 h2 {
+  font-size: 48px;
+}
+.section3 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 15px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.section3 ul li button {
+  border: none;
+  font-size: 16px;
+}
+.s3-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 60px;
+  gap: 20px;
+}
+.s3-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.s3-card-head {
+  background-image: url(https://reservq.vercel.app/assets/traditional-6-c7b53cff.png);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 80px 10px;
+  background-size: cover;
+  width: 100%;
+}
+.s3-card-head i {
+  color: #f01543;
+  background: white;
+  font-weight: bold;
+}
+.s3-card-head span {
+    background-color: #000929cc;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.s3-card-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.s3-card-center span {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f01543;
+}
+.s3-card-center div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.s3-card-center div i {
+  color: yellow;
+}
+.s3-card-foot {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.s3-card-foot a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.s3-card-foot div {
+  display: flex;
+  gap: 10px;
+}
+.s3-card-foot div i {
+  color: #f01543;
+  font-size: 20px;
+}
+.section4 {
+  background-image: url(https://reservq.vercel.app/assets/Process-bg-88e10cae.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+.s4-left {
+  width: 50%;
+}
+.s4-left img {
+  width: 100%;
+}
+.s4-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.s4-right h2 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.s4-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  background: #0d1634;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.s4-card i {
+  font-size: 30px;
+  padding: 25px;
+  background: #262e49;
+  border-radius: 20px;
+}
+.s4-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.s4-card div h4 {
+  font-size: 24px;
+}
+.s4-card div p {
+  color: gray;
+}
+.section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding: 100px 50px;
+}
+.section5 h2{
+    font-size: 48px;
+}
+.s5-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.s5-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px;
+}
+.s5-card-left {
+  background-image: url(https://reservq.vercel.app/assets/popular-1-725ae64e.png);
+  width: 50%;
+  padding: 20px 20px 200px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
+}
+.s5-card-left span{
+    padding: 6px;
+    background-color: #000929cc;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+.s5-card-left span i{
+    color: yellow;
+}
+.s5-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  text-align: left;
+}
+.s5-card-right a{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+.bekar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+}
+.bekar p{
+    text-align: left;
+    margin-left: -130px;
+}
+.s5-price{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.s5-price span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.s5-price a{
+    font-size: 16px;
+    color: gray;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.section6{
+    background: #000929;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.section6 h2{
+    font-size: 48px;
+    color: white;
+}
+.s6-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: lightgray;
+    gap: 50px;
+}
+.s6-card{
+
+    background-image: url(data:image/png;base64,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);
+    background-size: unset;
+    background-repeat: no-repeat;
+    padding: 100px 20px 20px 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.s6-people{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+.person{
+    display: flex;
+    gap: 20px;
+}
+.s6-people-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.s6-people-name h3 ,.s6-people-name p{
+    color: white;
+}
+.fivestars{
+color: yellow;
+}
+.section7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+}
+.s7-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+}
+.s7-left h2{
+    font-size: 48px;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.s7-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+}
+.s7-right-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.s7-right-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.s7-imagediv{
+    background-image: url(https://reservq.vercel.app/assets/faq-2-f00ad769.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+    position: relative;
+    height: 240px;
+}
+.s7-imagediv p{
+    margin-top: 50%;
+    transform: translate(0,-50%);
+}
+.s7-imagediv span{
+    margin-left: 60%;
+    transform: translate(-50%,0);
+}
+.s7-right img{
+    width:60%;
+}
+.s7-reng{
+    background: #f0154466;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    width: 100%;
+    gap: 50px;
+    background-image: url(https://reservq.vercel.app/assets/rest-bg-542f355f.png);
+    background-size: cover;
+}
+.s8-left{
+width: 40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+}
+.s8-left h2{
+    font-size: 48px;
+}
+.s8-right{
+
+    overflow: hidden;
+}
+.s8-right img{
+width: 600px;
+}
+.s8-right-bottom{
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+    width: 100%;
+}
+.googleplay{
+    background: white;
+    padding: 20px;
+    border-radius: 50px;
+    color: black;
+    display: flex;justify-content: center;align-items: center;gap: 5px;
+}
+.googleplay img{
+width: 30px;
+}
+.appstore{
+    background: black;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    display: flex;justify-content: center;align-items: center;gap: 15px;
+}
+.appstore i{
+    font-size: 30px;
+}
+footer{
+    background-image: url(https://reservq.vercel.app/assets/Footers-bg-7148736e.png);
+    background-size: cover;
+
+}
+.footer-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+    border-bottom: 1px solid lightgray;
+}
+.foot1{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    color: white;
+}
+.f-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.f-icons i{
+    padding: 20px;
+    background: #19213e;
+    border-radius: 20px;
+    color: gray;
+}
+.foot2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+}
+.foot2 h3{
+    color: white;
+    font-size: 24px;
+}
+.foot2-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.foot2-ul li a{
+    color: white;
+}
+.foot3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+}
+.foot3 h3{
+    color: white;
+    font-size: 24px;
+}
+.foot3-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.foot3-ul li a{
+    color: white;
+}
+.foot4{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+gap: 30px;
+width: 400px;
+}
+.foot4 h3{
+    color: white;
+    font-size: 24px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.formdiv input{
+    padding: 15px 15px 15px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.formdiv i{
+    position: absolute;
+    left: 10px;
+    color: gray;
+}
+form button{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background:#f01543;
+    color: white;
+    cursor: pointer;
+}
+.footer-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.footer-end{
+    color: gray;
+    font-weight: bold;
+    background: #000929;
+}
+.footer-end a{
+    color: gray;
+    text-decoration: underline;
+}
+.d-none{
+    display: none;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 98;
+}
+.d-none i{
+    font-size: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1080px) {
+    nav{
+        display: none;
+    }
+    .d-none{
+        display: flex;
+    }
+  }
+  @media only screen and (max-width: 960px){
+    .s8-right{
+        display: none;
+    }
+    .s8-left{
+        width: 100%;
+    }
+    .footer-start{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .foot1{
+        align-items: center;
+        text-align: center;
+    }
+    .foot2{
+        align-items: center;
+        text-align: center;
+    }
+    .foot3{
+        align-items: center;
+        text-align: center;
+    }
+    .foot4{
+        align-items: center;
+        text-align: center;
+    }
+    .s7-right{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 766px) {
+    .s3-cards{
+        flex-direction: column;
+    }
+    .s3-card{
+        width: 50%;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    .s5-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s6-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s6-people{
+        flex-direction: column;
+    }
+    .section1{
+        font-size: 10px;
+        padding: 100px 20px;
+        padding: 10px;
+        background-repeat: no-repeat;
+        overflow: hidden;   
+    }
+    .section1 h1{
+        font-size: 45px;
+    }
+    .section1 p{
+        width: 400px;
+    }
+    .section1-contain{
+        padding: 0;
+        font-style: 20px;
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .section2-center{
+        flex-direction: column;
+
+    }
+    .section2-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section2 img{
+        width: 70%;
+    }
+  }
+  @media only screen and (max-width: 490px){
+    .section3 ul{
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 416px){
+    .s3-card{
+        width: 70%;
+    }
+    .section5{
+        display: none;
+    }
+    .s8-right-bottom{
+        gap: 10px;
+    }
+    .footer-start{
+        overflow: hidden;
+        padding: 0;
+    }
+    .foot4 h3{
+        font-size: 16px;
+        padding: 0;
+    }
+  }
